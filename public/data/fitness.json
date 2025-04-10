@@ -5,7 +5,7 @@
     "brand": "PowerLegs",
     "category": "Fitness",
     "price": 899,
-    "image": "https://images.unsplash.com/photo-1616279968814-c9e7a4ea4bd0?auto=format&fit=crop&w=600&q=80",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTOOtcwBkrNcFyjwSejhOgcLl-BBLUouwX3fFYl8bjkeVMAG60MQBt3HyWIPkFDXhQWNrZwmnwSIeGdPt34egSeaTlyE2MzIQHzxu-s_LE",
     "tags": ["weights", "leg workout", "endurance"],
     "description": "Comfort-fit adjustable ankle weights for added resistance in your leg workouts."
   },
@@ -15,7 +15,7 @@
     "brand": "Bandify",
     "category": "Fitness",
     "price": 799,
-    "image": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=600&q=80",
+    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSkhubb-LZN-3lKqXIMMpJX8KbhhzbD79BEvMYjuoLFOtajwAPjaM-p6cgAzE34mjmtO0ezMm7jk9rIMlxwY6CdoXezSGCM6zUu95MBDERPHC6N1UtRY1DZ",
     "tags": ["pull-ups", "bodyweight", "resistance"],
     "description": "Multi-resistance pull-up assist bands, perfect for upper-body training."
   },
@@ -25,7 +25,7 @@
     "brand": "GripStrong",
     "category": "Fitness",
     "price": 499,
-    "image": "https://images.unsplash.com/photo-1584467735871-bd26c207348b?auto=format&fit=crop&w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1557127972-1c446ea89ea5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8R3ltJTIwR2xvdmVzfGVufDB8fDB8fHww",
     "tags": ["protection", "lifting", "grip"],
     "description": "Comfortable, breathable gym gloves with superior palm grip and wrist support."
   },
@@ -35,7 +35,7 @@
     "brand": "CoreZone",
     "category": "Fitness",
     "price": 1899,
-    "image": "https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/41IZcIl1zwL.jpg",
     "tags": ["core", "stability", "balance"],
     "description": "Wooden balance board for improving posture, coordination, and core strength."
   },
@@ -45,7 +45,7 @@
     "brand": "CardioPro",
     "category": "Fitness",
     "price": 599,
-    "image": "https://images.unsplash.com/photo-1621451537084-0f03f6ed92fa?auto=format&fit=crop&w=600&q=80",
+    "image": "https://images.meesho.com/images/products/441314284/pz4ch_1200.jpg",
     "tags": ["cardio", "portable", "HIIT"],
     "description": "Weighted jump rope for intense cardio and endurance training."
   }
