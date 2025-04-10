@@ -1,0 +1,52 @@
+[
+  {
+    "productId": "food001",
+    "title": "Organic Almond Butter",
+    "brand": "NutraBliss",
+    "category": "Food",
+    "price": 499,
+    "image": "https://images.unsplash.com/photo-1606335543042-018654fa5704?auto=format&fit=crop&w=600&q=80",
+    "tags": ["healthy", "spread", "vegan"],
+    "description": "Creamy organic almond butter with no added sugar or preservatives."
+  },
+  {
+    "productId": "food002",
+    "title": "Granola Energy Bars",
+    "brand": "NatureGo",
+    "category": "Food",
+    "price": 699,
+    "image": "https://images.unsplash.com/photo-1613145997971-dfc837b0ae61?auto=format&fit=crop&w=600&q=80",
+    "tags": ["snack", "energy", "oats"],
+    "description": "Pack of 6 nutritious granola bars packed with oats, seeds, and honey."
+  },
+  {
+    "productId": "food003",
+    "title": "Keto Protein Chips",
+    "brand": "CrunchFit",
+    "category": "Food",
+    "price": 299,
+    "image": "https://images.unsplash.com/photo-1589308078055-459356bd55c5?auto=format&fit=crop&w=600&q=80",
+    "tags": ["low carb", "protein", "snack"],
+    "description": "High-protein, keto-friendly chips for guilt-free snacking."
+  },
+  {
+    "productId": "food004",
+    "title": "Green Tea (Organic)",
+    "brand": "LeafZen",
+    "category": "Food",
+    "price": 399,
+    "image": "https://images.unsplash.com/photo-1505576391880-b3f9d713dc1c?auto=format&fit=crop&w=600&q=80",
+    "tags": ["detox", "tea", "relax"],
+    "description": "Refreshing organic green tea leaves for calm and focus."
+  },
+  {
+    "productId": "food005",
+    "title": "Trail Mix Pouch",
+    "brand": "SnackSprint",
+    "category": "Food",
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1572441710538-8e029f1d4d35?auto=format&fit=crop&w=600&q=80",
+    "tags": ["nuts", "dried fruits", "energy"],
+    "description": "Healthy mix of almonds, raisins, seeds, and dried fruits."
+  }
+]

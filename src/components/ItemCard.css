@@ -1,0 +1,67 @@
+/* src/components/ItemCard.css */
+.item-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 300px; /* Adjust as needed */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 3px;
+  }
+  
+  .item-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .item-card .brand {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 3px;
+  }
+  
+  .item-card .price {
+    font-weight: bold;
+    color: #007bff; /* Example primary color */
+    margin-bottom: 8px;
+  }
+  
+  .item-card .category {
+    font-size: 0.85em;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .item-card .tags {
+    font-size: 0.75em;
+    color: #999;
+    margin-bottom: 8px;
+  }
+  
+  .item-card .description {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .item-card button {
+    background-color: #28a745; /* Example success color */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .item-card button:hover {
+    background-color: #218838;
+  }

@@ -1,0 +1,102 @@
+[
+  {
+    "productId": "book001",
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "genre": "Fiction",
+    "price": 1099,
+    "image": "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=80",
+    "tags": ["philosophical", "life", "choices"],
+    "description": "A story about a woman who finds herself in a magical library between life and death."
+  },
+  {
+    "productId": "book002",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "genre": "Self-help",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1608497219141-2ea3b5b9c171?auto=format&fit=crop&w=600&q=80",
+    "tags": ["productivity", "habit", "behavior"],
+    "description": "An easy and proven way to build good habits and break bad ones."
+  },
+  {
+    "productId": "book003",
+    "title": "Educated",
+    "author": "Tara Westover",
+    "genre": "Memoir",
+    "price": 899,
+    "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80",
+    "tags": ["biography", "inspiration", "education"],
+    "description": "A memoir about a woman who grew up in a survivalist family and later earned a PhD from Cambridge."
+  },
+  {
+    "productId": "book004",
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "genre": "History",
+    "price": 1499,
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80",
+    "tags": ["evolution", "society", "humanity"],
+    "description": "Explores the journey of Homo sapiens from early evolution to the modern world."
+  },
+  {
+    "productId": "book005",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "genre": "Fiction",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1581090700227-1f30d21725f8?auto=format&fit=crop&w=600&q=80",
+    "tags": ["inspiration", "philosophy", "adventure"],
+    "description": "A fable about following your dreams and listening to your heart."
+  },
+  {
+    "productId": "book006",
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "genre": "Self-help",
+    "price": 1199,
+    "image": "https://images.unsplash.com/photo-1616529732430-c8010c8e3e8a?auto=format&fit=crop&w=600&q=80",
+    "tags": ["life", "attitude", "real talk"],
+    "description": "A counterintuitive approach to living a good life by caring less about the wrong things."
+  },
+  {
+    "productId": "book007",
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "genre": "Mystery",
+    "price": 999,
+    "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80",
+    "tags": ["mystery", "nature", "coming of age"],
+    "description": "A coming-of-age mystery set in the marshes of North Carolina."
+  },
+  {
+    "productId": "book008",
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "genre": "Productivity",
+    "price": 1399,
+    "image": "https://images.unsplash.com/photo-1611078489935-f7f14fc9e3a3?auto=format&fit=crop&w=600&q=80",
+    "tags": ["focus", "productivity", "work"],
+    "description": "Rules for focused success in a distracted world."
+  },
+  {
+    "productId": "book009",
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "genre": "Thriller",
+    "price": 1199,
+    "image": "https://images.unsplash.com/photo-1603899121295-c3c7b7c58f07?auto=format&fit=crop&w=600&q=80",
+    "tags": ["psychological", "mystery", "thriller"],
+    "description": "A gripping psychological thriller about a woman who stops speaking after a violent crime."
+  },
+  {
+    "productId": "book010",
+    "title": "Ikigai: The Japanese Secret to a Long and Happy Life",
+    "author": "Héctor García & Francesc Miralles",
+    "genre": "Self-help",
+    "price": 899,
+    "image": "https://images.unsplash.com/photo-1549887534-5786777b3a7b?auto=format&fit=crop&w=600&q=80",
+    "tags": ["lifestyle", "wellness", "japanese"],
+    "description": "Explores the Japanese concept of Ikigai and how it can bring purpose and happiness."
+  }
+]

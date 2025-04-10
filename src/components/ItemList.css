@@ -1,0 +1,20 @@
+/* src/components/ItemList.css */
+.item-list-skincare,
+.item-list-books {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee; /* Optional: Separator between categories */
+}
+
+.item-list-skincare h2,
+.item-list-books h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Or space-around, space-between */
+}

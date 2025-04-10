@@ -1,0 +1,52 @@
+[
+  {
+    "productId": "fit006",
+    "title": "Ankle Weights (Pair)",
+    "brand": "PowerLegs",
+    "category": "Fitness",
+    "price": 899,
+    "image": "https://images.unsplash.com/photo-1616279968814-c9e7a4ea4bd0?auto=format&fit=crop&w=600&q=80",
+    "tags": ["weights", "leg workout", "endurance"],
+    "description": "Comfort-fit adjustable ankle weights for added resistance in your leg workouts."
+  },
+  {
+    "productId": "fit007",
+    "title": "Pull-Up Resistance Bands",
+    "brand": "Bandify",
+    "category": "Fitness",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=600&q=80",
+    "tags": ["pull-ups", "bodyweight", "resistance"],
+    "description": "Multi-resistance pull-up assist bands, perfect for upper-body training."
+  },
+  {
+    "productId": "fit008",
+    "title": "Gym Gloves",
+    "brand": "GripStrong",
+    "category": "Fitness",
+    "price": 499,
+    "image": "https://images.unsplash.com/photo-1584467735871-bd26c207348b?auto=format&fit=crop&w=600&q=80",
+    "tags": ["protection", "lifting", "grip"],
+    "description": "Comfortable, breathable gym gloves with superior palm grip and wrist support."
+  },
+  {
+    "productId": "fit009",
+    "title": "Balance Board Trainer",
+    "brand": "CoreZone",
+    "category": "Fitness",
+    "price": 1899,
+    "image": "https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=600&q=80",
+    "tags": ["core", "stability", "balance"],
+    "description": "Wooden balance board for improving posture, coordination, and core strength."
+  },
+  {
+    "productId": "fit010",
+    "title": "Jump Rope (Weighted)",
+    "brand": "CardioPro",
+    "category": "Fitness",
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1621451537084-0f03f6ed92fa?auto=format&fit=crop&w=600&q=80",
+    "tags": ["cardio", "portable", "HIIT"],
+    "description": "Weighted jump rope for intense cardio and endurance training."
+  }
+]
