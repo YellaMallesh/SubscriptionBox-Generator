@@ -1,5 +1,16 @@
 import React from 'react';
 import './ItemCard.css';
+const handleSelectBox = (box) => {
+  dispatch({
+    type: 'ADD_ITEM',
+    payload: {
+      id: box.id,
+      name: box.name,
+      price: box.price,
+      type: 'box'
+    }
+  });
+};
 
 function ItemCard({ item }) {
   return (
@@ -13,7 +24,7 @@ function ItemCard({ item }) {
         <p className="tags">Tags: {item.tags.join(', ')}</p>
       )}
       <p className="description">{item.description}</p>
-      <button>Add to Box</button> {/* You'll implement this functionality */}
+      <button onClick={() => handleSelectBox(option)}>Add to Box</button>
     </div>
   );
 }

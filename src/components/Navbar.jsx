@@ -1,29 +1,39 @@
 import React from 'react';
-import './Navbar.css'; // Import the CSS file
+import { ShoppingCart } from 'lucide-react'; 
+import './Navbar.css';
 
 function Navbar() {
+  
+  const [cartCount, setCartCount] = React.useState(0);
+
   return (
     <nav className="navbar">
       <div className="container">
         <div className="navbar-brand">
-          <a href="/">Your Subscription Box</a> {/* Replace with your brand name/logo */}
+          <a href="/">Subscribe Box</a>
         </div>
         <ul className="navbar-menu">
           <li className="navbar-item">
             <a href="#home">Home</a>
           </li>
           <li className="navbar-item">
-            <a href="#categories">Categories</a> {/* Adjust the link as needed */}
+            <a href="#categories">Categories</a>
           </li>
           <li className="navbar-item">
-            <a href="#build-your-box">Build Your Box</a> {/* Adjust the link as needed */}
+            <a href="#build-your-box">Make Your Box</a>
           </li>
           <li className="navbar-item">
-            <a href="#about">About Us</a> {/* Adjust the link as needed */}
+            <a href="#about">About Us</a>
           </li>
-          {/* Add more navigation items as needed */}
+         
+          <li className="navbar-item navbar-cart">
+            <a href="#Cart"> 
+              <ShoppingCart />
+              {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
+            </a>
+          </li>
         </ul>
-        {/* You could add user authentication links here (e.g., Login, Sign Up) */}
+        
       </div>
     </nav>
   );

@@ -1,43 +1,60 @@
 import React, { useState } from 'react';
 import { Package, Gift, ShoppingCart, Heart, Sparkles, ChevronRight } from 'lucide-react';
-import ItemList from './components/ItemList'; // Correct import path
+import { CartProvider, useCart } from './context/CartContext';
+import ItemList from './components/ItemList';
 import Navbar from './components/Navbar';
 import AboutUs from './components/AboutUs';
+import Cart from './components/Cart';
 
-function App() {
+
+function AppContent() {
   const [selectedCategory, setSelectedCategory] = useState('beauty');
   const [boxSize, setBoxSize] = useState('medium');
+  const { dispatch } = useCart();
 
   const categories = {
     beauty: { icon: Sparkles, color: 'beauty', dataUrl: '/data/skincare.json' },
-    food: { icon: Package, color: 'food', dataUrl: '/data/food.json' }, // Assuming you'll create food.json
-    fitness: { icon: Heart, color: 'fitness', dataUrl: '/data/fitness.json' }, // Assuming you'll create fitness.json
+    food: { icon: Package, color: 'food', dataUrl: '/data/food.json' },
+    fitness: { icon: Heart, color: 'fitness', dataUrl: '/data/fitness.json' },
     books: { icon: Gift, color: 'books', dataUrl: '/data/books.json' },
   };
 
   const boxOptions = {
     beauty: [
-      { id: 'b1', name: 'Skincare Essentials', price: 39.99, description: 'Monthly selection of premium skincare products' },
-      { id: 'b2', name: 'Makeup Box', price: 49.99, description: 'Curated makeup products from top brands' },
+      { id: 'b1', name: 'Skincare Essentials', price: 499, description: 'Monthly selection of premium skincare products' },
+      { id: 'b2', name: 'Makeup Box', price: 999, description: 'Curated makeup products from top brands' },
     ],
     food: [
-      { id: 'f1', name: 'Gourmet Snacks', price: 34.99, description: 'Artisanal snacks from around the world' },
-      { id: 'f2', name: 'Coffee Lovers', price: 29.99, description: 'Premium coffee beans and treats' },
+      { id: 'f1', name: 'Gourmet Snacks', price: 399, description: 'Artisanal snacks from around the world' },
+      { id: 'f2', name: 'Coffee Lovers', price: 299, description: 'Premium coffee beans and treats' },
     ],
     fitness: [
-      { id: 'ft1', name: 'Workout Essentials', price: 44.99, description: 'Monthly fitness gear and supplements' },
-      { id: 'ft2', name: 'Recovery Box', price: 39.99, description: 'Products focused on post-workout recovery' },
+      { id: 'ft1', name: 'Workout Essentials', price: 449, description: 'Monthly fitness gear and supplements' },
+      { id: 'ft2', name: 'Recovery Box', price: 399, description: 'Products focused on post-workout recovery' },
     ],
     books: [
-      { id: 'bk1', name: 'Fiction Favorites', price: 29.99, description: 'Bestselling fiction books monthly' },
-      { id: 'bk2', name: 'Non-Fiction Bundle', price: 34.99, description: 'Thought-provoking non-fiction selections' },
+      { id: 'bk1', name: 'Fiction Favorites', price: 299, description: 'Bestselling fiction books monthly' },
+      { id: 'bk2', name: 'Non-Fiction Bundle', price: 399, description: 'Thought-provoking non-fiction selections' },
     ],
+  };
+
+  const handleSelectBox = (box) => {
+    dispatch({
+      type: 'ADD_ITEM',
+      payload: {
+        id: box.id,
+        name: box.name,
+        price: box.price,
+        type: 'box'
+      }
+    });
   };
 
   return (
     <div>
-          <Navbar /> 
-      {/* Hero Section */}
+      <Navbar />
+      
+      {/* Home Section */}
       <section id="home" className="hero">
         <div className="container">
           <h1>
@@ -52,6 +69,7 @@ function App() {
 
       {/* Main Content */}
       <div id="categories" className="container">
+
         {/* Category Selection */}
         <div className="category-grid">
           {Object.entries(categories).map(([category, { icon: Icon, color }]) => (
@@ -66,7 +84,34 @@ function App() {
           ))}
         </div>
 
-        {/* Box Size Selection */}
+       
+
+        {/* Recommended Boxes */}
+        <section id="build-your-box" className="box-options">
+          <h2>Recommended Boxes</h2>
+          <div className="options-grid">
+            {boxOptions[selectedCategory]?.map((option) => (
+              <div key={option.id} className="option-card">
+                <h3>{option.name}</h3>
+                <p>{option.description}</p>
+                <div className="price-row">
+                  <span className="price">{option.price}₹</span>
+                  <button 
+                    className="btn btn-primary"
+                    onClick={() => handleSelectBox(option)}
+                  >
+                    Select
+                    <ChevronRight />
+                  </button>
+                </div>
+              </div>
+            ))}
+            {!boxOptions[selectedCategory] && <p>No pre-defined boxes available for {selectedCategory}.</p>}
+          </div>
+        </section>
+
+
+             {/* Box Size Selection */}
         <section className="box-size">
           <h2>Choose Your Box Size</h2>
           <div className="size-grid">
@@ -85,29 +130,8 @@ function App() {
           </div>
         </section>
 
-        {/* Available Boxes (Pre-defined options) */}
-        <section id="build-your-box" className="box-options">
-          <h2>Available Boxes</h2>
-          <div className="options-grid">
-            {boxOptions[selectedCategory]?.map((option) => (
-              <div key={option.id} className="option-card">
-                <h3>{option.name}</h3>
-                <p>{option.description}</p>
-                <div className="price-row">
-                  <span className="price">${option.price}</span>
-                  <button className="btn btn-primary">
-                    Select
-                    <ChevronRight />
-                  </button>
-                </div>
-              </div>
-            ))}
-            {/* Handle case where there are no options for the selected category */}
-            {!boxOptions[selectedCategory] && <p>No pre-defined boxes available for {selectedCategory}.</p>}
-          </div>
-        </section>
 
-        {/* Individual Item Listing (Using ItemList component) */}
+        {/* Individual Item Listing */}
         <section className="individual-items">
           <h2>Explore Individual Items</h2>
           {categories[selectedCategory]?.dataUrl && (
@@ -120,8 +144,16 @@ function App() {
             <p>No individual items available for {selectedCategory}.</p>
           )}
         </section>
+
+        {/* Cart Section */}
+        <section id="cart" className="cart-section">
+          <h2>Your Cart</h2>
+          <Cart />
+        </section>
       </div>
+
       <AboutUs />
+
       {/* CTA Section */}
       <section className="cta">
         <div className="container">
@@ -133,6 +165,14 @@ function App() {
         </div>
       </section>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <CartProvider>
+      <AppContent />
+    </CartProvider>
   );
 }
 
