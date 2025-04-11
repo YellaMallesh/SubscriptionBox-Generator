@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Package, Gift, ShoppingCart, Heart, Sparkles, ChevronRight } from 'lucide-react';
 import ItemList from './components/ItemList'; // Correct import path
+import Navbar from './components/Navbar';
+import AboutUs from './components/AboutUs';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('beauty');
@@ -34,8 +36,9 @@ function App() {
 
   return (
     <div>
+          <Navbar /> 
       {/* Hero Section */}
-      <section className="hero">
+      <section id="home" className="hero">
         <div className="container">
           <h1>
             Create Your Perfect
@@ -48,7 +51,7 @@ function App() {
       </section>
 
       {/* Main Content */}
-      <div className="container">
+      <div id="categories" className="container">
         {/* Category Selection */}
         <div className="category-grid">
           {Object.entries(categories).map(([category, { icon: Icon, color }]) => (
@@ -83,7 +86,7 @@ function App() {
         </section>
 
         {/* Available Boxes (Pre-defined options) */}
-        <section className="box-options">
+        <section id="build-your-box" className="box-options">
           <h2>Available Boxes</h2>
           <div className="options-grid">
             {boxOptions[selectedCategory]?.map((option) => (
@@ -118,7 +121,7 @@ function App() {
           )}
         </section>
       </div>
-
+      <AboutUs />
       {/* CTA Section */}
       <section className="cta">
         <div className="container">

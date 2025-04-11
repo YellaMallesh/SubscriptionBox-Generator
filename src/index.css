@@ -254,3 +254,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* App.css or index.css */
+html {
+  scroll-behavior: smooth;
+}
